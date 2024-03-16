@@ -108,565 +108,1380 @@
                     <h1 class="fs-5 fw-bold p-2">10 prodotti trovati</h1>
                     <div class="btn-group btn-group-sm p-2" role="group" aria-label="Small button group">
                         <button type="button" class="btn btn-outline-secondary fw-bold">Esporta</button>
-                        <button type="button" class="btn btn-outline-secondary fw-bold">Nuovo</button>
+                        <button type="button" class="btn btn-outline-secondary fw-bold"><a  class="text-decoration-none text-secondary" href="newproduct.html">Nuovo</a></button>
                     </div>
                 </div>
                 <!-- /header -->
 
                 <!-- table -->
                 <div class="table-responsive">
-                    <table class="table">
+                    <table class="table align-middle">
                         <!-- thead -->
                         <thead>
                             <tr>
-                                <th scope="col" colspan="2" class="">Nome</th>
-                                <th scope="col" class="d-none d-sm-table-cell text-end">Prezzo</th>
-                                <th scope="col" class="d-none d-md-table-cell text-end">Stato</th>
-                                <th scope="col" class="text-end">Azioni</th>
+                                <th class="col-1 col-sm-1 col-md-1 col-lg-1">Nome</thn=>
+                                <th class="col-12 col-sm-12 col-md-12 col-lg-12"></th>
+                                <th class="d-none d-sm-table-cell col-md-1 col-lg-1 text-center">Prezzo</th>
+                                <th class="d-none d-md-table-cell col-lg-1 text-center">Stato</the=>
+                                <th class="col-2 col-sm-2 col-md-1 col-lg-1 text-center">Azioni</th>
                             </tr>
                         </thead>
                         <!-- tbody -->
                         <tbody>
                             <!-- row -->
                             <tr>
-                                <td colspan="2">
-                                    <div class="d-flex">
-                                        <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
-                                        <div>
-                                            <span class="ps-2 d-block">Smartphone boolstrap edition 32</span>
-                                            <span class="ps-2 text-secondary d-none d-xl-block">è un bel telefono</span>
-                                        </div>
-                                    </div>
+                                <td class="col-md-1 col-lg-1 pt-2 pb-2">
+                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
                                 </td>
-                                <td class="align-middle d-none d-sm-table-cell text-end">
+                                <td class="col-12 col-sm-12 col-md-12 col-lg-12 text-start">
+                                    <span class="d-block">Smartphone boolstrap edition 32</span>
+                                    <span class="text-secondary d-none d-lg-block">è un bel telefono</span>
+                                </td>
+
+                                <td class="d-none d-sm-table-cell col-md-1 p-0 pt-2 text-center">
                                     <span>2000.00€</span>
                                 </td>
-                                <td class="align-middle d-none d-md-table-cell text-end">
-                                    <button class="border border-success bg-light bg-opacity-10 rounded-circle">
+                                <td class="d-none d-md-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <button class="border border-success bg-light rounded-circle">
                                         <i class="bi bi-check"></i>
                                     </button>
                                 </td>
-                                <td class="align-middle text-end">
+
+                                <td class="col-2 col-sm-2 col-md-1 p-0 pt-2 ps-2">
                                     <div class="d-flex gap-2 justify-content-end">
                                         <button type="button" class="btn btn-outline-primary btn-sm">
                                             <i class="bi bi-pencil-fill"></i>
                                         </button>
                                         <button type="button" class="btn btn-outline-danger btn-sm">
-                                            <i class="bi bi-trash-fill"></i>
+                                            <i class="bi bi-trash-fill" data-bs-toggle="modal"
+                                                data-bs-target="#elimina"></i>
                                         </button>
+                                    </div>
+                                    <div class="modal fade" id="elimina" tabindex="-1" aria-labelledby="elimina"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header text-center d-block border-bottom-0">
+                                                    <h1 class="modal-title h3 text-uppercase text-danger" id="elimina">
+                                                        Mario,sicuro di voler eliminare il prodotto?</h1>
+                                                </div>
+                                                <div
+                                                    class="modal-footer justify-content-center btn btn-group border-top-0 m-0">
+                                                    <button type="button" class="btn btn-outline-success m-0">Torna
+                                                        indietro</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger m-0">Cancella</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </td>
                             </tr>
                             <!-- /row -->
+
                             <!-- row -->
                             <tr>
-                                <td colspan="2">
-                                    <div class="d-flex">
-                                        <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
-                                        <div>
-                                            <span class="ps-2 d-block">Smartphone boolstrap edition 32</span>
-                                            <span class="ps-2 text-secondary d-none d-xl-block">è un bel telefono</span>
-                                        </div>
-                                    </div>
+                                <td class="col-md-1 col-lg-1 pt-2 pb-2">
+                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
                                 </td>
-                                <td class="align-middle d-none d-sm-table-cell text-end">
+                                <td class="col-12 col-sm-12 col-md-12 col-lg-12 text-start">
+                                    <span class="d-block">Smartphone boolstrap edition 32</span>
+                                    <span class="text-secondary d-none d-lg-block">è un bel telefono</span>
+                                </td>
+
+                                <td class="d-none d-sm-table-cell col-md-1 p-0 pt-2 text-center">
                                     <span>2000.00€</span>
                                 </td>
-                                <td class="align-middle d-none d-md-table-cell text-end">
+                                <td class="d-none d-md-table-cell col-md-1 p-0 pt-2 text-center">
                                     <button class="border border-success bg-light bg-opacity-10 rounded-circle">
-                                        <i class="bi bi-check"></i>
+                                        <i class="bi bi-check data-bs-toggle"></i>
                                     </button>
                                 </td>
-                                <td class="align-middle text-end">
+                                <td class="col-2 col-sm-2 col-md-1 p-0 pt-2 ps-2">
                                     <div class="d-flex gap-2 justify-content-end">
                                         <button type="button" class="btn btn-outline-primary btn-sm">
                                             <i class="bi bi-pencil-fill"></i>
                                         </button>
                                         <button type="button" class="btn btn-outline-danger btn-sm">
-                                            <i class="bi bi-trash-fill"></i>
+                                            <i class="bi bi-trash-fill" data-bs-toggle="modal"
+                                                data-bs-target="#elimina"></i>
                                         </button>
+                                    </div>
+                                    <div class="modal fade" id="elimina" tabindex="-1" aria-labelledby="elimina"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header text-center d-block border-bottom-0">
+                                                    <h1 class="modal-title h3 text-uppercase text-danger" id="elimina">
+                                                        Mario,sicuro di voler eliminare il prodotto?</h1>
+                                                </div>
+                                                <div
+                                                    class="modal-footer justify-content-center btn btn-group border-top-0 m-0">
+                                                    <button type="button" class="btn btn-outline-success m-0">Torna
+                                                        indietro</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger m-0">Cancella</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </td>
                             </tr>
                             <!-- /row -->
+
                             <!-- row -->
                             <tr>
-                                <td colspan="2">
-                                    <div class="d-flex">
-                                        <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
-                                        <div>
-                                            <span class="ps-2 d-block">Smartphone boolstrap edition 32</span>
-                                            <span class="ps-2 text-secondary d-none d-xl-block">è un bel telefono</span>
-                                        </div>
-                                    </div>
+                                <td class="col-md-1 col-lg-1 pt-2 pb-2">
+                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
                                 </td>
-                                <td class="align-middle d-none d-sm-table-cell text-end">
+                                <td class="col-12 col-sm-12 col-md-12 col-lg-12 text-start">
+                                    <span class="d-block">Smartphone boolstrap edition 32</span>
+                                    <span class="text-secondary d-none d-lg-block">è un bel telefono</span>
+                                </td>
+
+                                <td class="d-none d-sm-table-cell col-md-1 p-0 pt-2 text-center">
                                     <span>2000.00€</span>
                                 </td>
-                                <td class="align-middle d-none d-md-table-cell text-end">
+                                <td class="d-none d-md-table-cell col-md-1 p-0 pt-2 text-center">
                                     <button class="border border-success bg-light bg-opacity-10 rounded-circle">
                                         <i class="bi bi-check"></i>
                                     </button>
                                 </td>
-                                <td class="align-middle text-end">
+                                <td class="col-2 col-sm-2 col-md-1 p-0 pt-2 ps-2">
                                     <div class="d-flex gap-2 justify-content-end">
                                         <button type="button" class="btn btn-outline-primary btn-sm">
                                             <i class="bi bi-pencil-fill"></i>
                                         </button>
                                         <button type="button" class="btn btn-outline-danger btn-sm">
-                                            <i class="bi bi-trash-fill"></i>
+                                            <i class="bi bi-trash-fill" data-bs-toggle="modal"
+                                                data-bs-target="#elimina"></i>
                                         </button>
+                                    </div>
+                                    <div class="modal fade" id="elimina" tabindex="-1" aria-labelledby="elimina"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header text-center d-block border-bottom-0">
+                                                    <h1 class="modal-title h3 text-uppercase text-danger" id="elimina">
+                                                        Mario,sicuro di voler eliminare il prodotto?</h1>
+                                                </div>
+                                                <div
+                                                    class="modal-footer justify-content-center btn btn-group border-top-0 m-0">
+                                                    <button type="button" class="btn btn-outline-success m-0">Torna
+                                                        indietro</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger m-0">Cancella</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </td>
                             </tr>
                             <!-- /row -->
+
                             <!-- row -->
                             <tr>
-                                <td colspan="2">
-                                    <div class="d-flex">
-                                        <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
-                                        <div>
-                                            <span class="ps-2 d-block">Smartphone boolstrap edition 32</span>
-                                            <span class="ps-2 text-secondary d-none d-xl-block">è un bel telefono</span>
-                                        </div>
-                                    </div>
+                                <td class="col-md-1 col-lg-1 pt-2 pb-2">
+                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
                                 </td>
-                                <td class="align-middle d-none d-sm-table-cell text-end">
+                                <td class="col-12 col-sm-12 col-md-12 col-lg-12 text-start">
+                                    <span class="d-block">Smartphone boolstrap edition 32</span>
+                                    <span class="text-secondary d-none d-lg-block">è un bel telefono</span>
+                                </td>
+
+                                <td class="d-none d-sm-table-cell col-md-1 p-0 pt-2 text-center">
                                     <span>2000.00€</span>
                                 </td>
-                                <td class="align-middle d-none d-md-table-cell text-end">
+                                <td class="d-none d-md-table-cell col-md-1 p-0 pt-2 text-center">
                                     <button class="border border-success bg-light bg-opacity-10 rounded-circle">
                                         <i class="bi bi-check"></i>
                                     </button>
                                 </td>
-                                <td class="align-middle text-end">
+                                <td class="col-2 col-sm-2 col-md-1 p-0 pt-2 ps-2">
                                     <div class="d-flex gap-2 justify-content-end">
                                         <button type="button" class="btn btn-outline-primary btn-sm">
                                             <i class="bi bi-pencil-fill"></i>
                                         </button>
                                         <button type="button" class="btn btn-outline-danger btn-sm">
-                                            <i class="bi bi-trash-fill"></i>
+                                            <i class="bi bi-trash-fill" data-bs-toggle="modal"
+                                                data-bs-target="#elimina"></i>
                                         </button>
+                                    </div>
+                                    <div class="modal fade" id="elimina" tabindex="-1" aria-labelledby="elimina"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header text-center d-block border-bottom-0">
+                                                    <h1 class="modal-title h3 text-uppercase text-danger" id="elimina">
+                                                        Mario,sicuro di voler eliminare il prodotto?</h1>
+                                                </div>
+                                                <div
+                                                    class="modal-footer justify-content-center btn btn-group border-top-0 m-0">
+                                                    <button type="button" class="btn btn-outline-success m-0">Torna
+                                                        indietro</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger m-0">Cancella</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </td>
                             </tr>
                             <!-- /row -->
+
                             <!-- row -->
                             <tr>
-                                <td colspan="2">
-                                    <div class="d-flex">
-                                        <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
-                                        <div>
-                                            <span class="ps-2 d-block">Smartphone boolstrap edition 32</span>
-                                            <span class="ps-2 text-secondary d-none d-xl-block">è un bel telefono</span>
-                                        </div>
-                                    </div>
+                                <td class="col-md-1 col-lg-1 pt-2 pb-2">
+                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
                                 </td>
-                                <td class="align-middle d-none d-sm-table-cell text-end">
+                                <td class="col-12 col-sm-12 col-md-12 col-lg-12 text-start">
+                                    <span class="d-block">Smartphone boolstrap edition 32</span>
+                                    <span class="text-secondary d-none d-lg-block">è un bel telefono</span>
+                                </td>
+
+                                <td class="d-none d-sm-table-cell col-md-1 p-0 pt-2 text-center">
                                     <span>2000.00€</span>
                                 </td>
-                                <td class="align-middle d-none d-md-table-cell text-end">
+                                <td class="d-none d-md-table-cell col-md-1 p-0 pt-2 text-center">
                                     <button class="border border-success bg-light bg-opacity-10 rounded-circle">
                                         <i class="bi bi-check"></i>
                                     </button>
                                 </td>
-                                <td class="align-middle text-end">
+                                <td class="col-2 col-sm-2 col-md-1 p-0 pt-2 ps-2">
                                     <div class="d-flex gap-2 justify-content-end">
                                         <button type="button" class="btn btn-outline-primary btn-sm">
                                             <i class="bi bi-pencil-fill"></i>
                                         </button>
                                         <button type="button" class="btn btn-outline-danger btn-sm">
-                                            <i class="bi bi-trash-fill"></i>
+                                            <i class="bi bi-trash-fill" data-bs-toggle="modal"
+                                                data-bs-target="#elimina"></i>
                                         </button>
+                                    </div>
+                                    <div class="modal fade" id="elimina" tabindex="-1" aria-labelledby="elimina"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header text-center d-block border-bottom-0">
+                                                    <h1 class="modal-title h3 text-uppercase text-danger" id="elimina">
+                                                        Mario,sicuro di voler eliminare il prodotto?</h1>
+                                                </div>
+                                                <div
+                                                    class="modal-footer justify-content-center btn btn-group border-top-0 m-0">
+                                                    <button type="button" class="btn btn-outline-success m-0">Torna
+                                                        indietro</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger m-0">Cancella</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </td>
                             </tr>
                             <!-- /row -->
+
                             <!-- row -->
                             <tr>
-                                <td colspan="2">
-                                    <div class="d-flex">
-                                        <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
-                                        <div>
-                                            <span class="ps-2 d-block">Smartphone boolstrap edition 32</span>
-                                            <span class="ps-2 text-secondary d-none d-xl-block">è un bel telefono</span>
-                                        </div>
-                                    </div>
+                                <td class="col-md-1 col-lg-1 pt-2 pb-2">
+                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
                                 </td>
-                                <td class="align-middle d-none d-sm-table-cell text-end">
+                                <td class="col-12 col-sm-12 col-md-12 col-lg-12 text-start">
+                                    <span class="d-block">Smartphone boolstrap edition 32</span>
+                                    <span class="text-secondary d-none d-lg-block">è un bel telefono</span>
+                                </td>
+
+                                <td class="d-none d-sm-table-cell col-md-1 p-0 pt-2 text-center">
                                     <span>2000.00€</span>
                                 </td>
-                                <td class="align-middle d-none d-md-table-cell text-end">
+                                <td class="d-none d-md-table-cell col-md-1 p-0 pt-2 text-center">
                                     <button class="border border-success bg-light bg-opacity-10 rounded-circle">
                                         <i class="bi bi-check"></i>
                                     </button>
                                 </td>
-                                <td class="align-middle text-end">
+                                <td class="col-2 col-sm-2 col-md-1 p-0 pt-2 ps-2">
                                     <div class="d-flex gap-2 justify-content-end">
                                         <button type="button" class="btn btn-outline-primary btn-sm">
                                             <i class="bi bi-pencil-fill"></i>
                                         </button>
                                         <button type="button" class="btn btn-outline-danger btn-sm">
-                                            <i class="bi bi-trash-fill"></i>
+                                            <i class="bi bi-trash-fill" data-bs-toggle="modal"
+                                                data-bs-target="#elimina"></i>
                                         </button>
+                                    </div>
+                                    <div class="modal fade" id="elimina" tabindex="-1" aria-labelledby="elimina"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header text-center d-block border-bottom-0">
+                                                    <h1 class="modal-title h3 text-uppercase text-danger" id="elimina">
+                                                        Mario,sicuro di voler eliminare il prodotto?</h1>
+                                                </div>
+                                                <div
+                                                    class="modal-footer justify-content-center btn btn-group border-top-0 m-0">
+                                                    <button type="button" class="btn btn-outline-success m-0">Torna
+                                                        indietro</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger m-0">Cancella</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </td>
                             </tr>
-                            <!-- /t-row -->
+                            <!-- /row -->
+
                             <!-- row -->
                             <tr>
-                                <td colspan="2">
-                                    <div class="d-flex">
-                                        <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
-                                        <div>
-                                            <span class="ps-2 d-block">Smartphone boolstrap edition 32</span>
-                                            <span class="ps-2 text-secondary d-none d-xl-block">è un bel telefono</span>
-                                        </div>
-                                    </div>
+                                <td class="col-md-1 col-lg-1 pt-2 pb-2">
+                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
                                 </td>
-                                <td class="align-middle d-none d-sm-table-cell text-end">
+                                <td class="col-12 col-sm-12 col-md-12 col-lg-12 text-start">
+                                    <span class="d-block">Smartphone boolstrap edition 32</span>
+                                    <span class="text-secondary d-none d-lg-block">è un bel telefono</span>
+                                </td>
+
+                                <td class="d-none d-sm-table-cell col-md-1 p-0 pt-2 text-center">
                                     <span>2000.00€</span>
                                 </td>
-                                <td class="align-middle d-none d-md-table-cell text-end">
+                                <td class="d-none d-md-table-cell col-md-1 p-0 pt-2 text-center">
                                     <button class="border border-success bg-light bg-opacity-10 rounded-circle">
                                         <i class="bi bi-check"></i>
                                     </button>
                                 </td>
-                                <td class="align-middle text-end">
+                                <td class="col-2 col-sm-2 col-md-1 p-0 pt-2 ps-2">
                                     <div class="d-flex gap-2 justify-content-end">
                                         <button type="button" class="btn btn-outline-primary btn-sm">
                                             <i class="bi bi-pencil-fill"></i>
                                         </button>
                                         <button type="button" class="btn btn-outline-danger btn-sm">
-                                            <i class="bi bi-trash-fill"></i>
+                                            <i class="bi bi-trash-fill" data-bs-toggle="modal"
+                                                data-bs-target="#elimina"></i>
                                         </button>
                                     </div>
-                                </td>
-                            </tr>
-                            <!-- /t-row -->
-
-                                                        <!-- row -->
-                                                        <tr>
-                                                            <td colspan="2">
-                                                                <div class="d-flex">
-                                                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
-                                                                    <div>
-                                                                        <span class="ps-2 d-block">Smartphone boolstrap edition 32</span>
-                                                                        <span class="ps-2 text-secondary d-none d-xl-block">è un bel telefono</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td class="align-middle d-none d-sm-table-cell text-end">
-                                                                <span>2000.00€</span>
-                                                            </td>
-                                                            <td class="align-middle d-none d-md-table-cell text-end">
-                                                                <button class="border border-success bg-light bg-opacity-10 rounded-circle">
-                                                                    <i class="bi bi-check"></i>
-                                                                </button>
-                                                            </td>
-                                                            <td class="align-middle text-end">
-                                                                <div class="d-flex gap-2 justify-content-end">
-                                                                    <button type="button" class="btn btn-outline-primary btn-sm">
-                                                                        <i class="bi bi-pencil-fill"></i>
-                                                                    </button>
-                                                                    <button type="button" class="btn btn-outline-danger btn-sm">
-                                                                        <i class="bi bi-trash-fill"></i>
-                                                                    </button>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <!-- /row -->
-
-                                                                                    <!-- row -->
-                            <tr>
-                                <td colspan="2">
-                                    <div class="d-flex">
-                                        <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
-                                        <div>
-                                            <span class="ps-2 d-block">Smartphone boolstrap edition 32</span>
-                                            <span class="ps-2 text-secondary d-none d-xl-block">è un bel telefono</span>
+                                    <div class="modal fade" id="elimina" tabindex="-1" aria-labelledby="elimina"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header text-center d-block border-bottom-0">
+                                                    <h1 class="modal-title h3 text-uppercase text-danger" id="elimina">
+                                                        Mario,sicuro di voler eliminare il prodotto?</h1>
+                                                </div>
+                                                <div
+                                                    class="modal-footer justify-content-center btn btn-group border-top-0 m-0">
+                                                    <button type="button" class="btn btn-outline-success m-0">Torna
+                                                        indietro</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger m-0">Cancella</button>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </td>
-                                <td class="align-middle d-none d-sm-table-cell text-end">
-                                    <span>2000.00€</span>
-                                </td>
-                                <td class="align-middle d-none d-md-table-cell text-end">
-                                    <button class="border border-success bg-light bg-opacity-10 rounded-circle">
-                                        <i class="bi bi-check"></i>
-                                    </button>
-                                </td>
-                                <td class="align-middle text-end">
-                                    <div class="d-flex gap-2 justify-content-end">
-                                        <button type="button" class="btn btn-outline-primary btn-sm">
-                                            <i class="bi bi-pencil-fill"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-outline-danger btn-sm">
-                                            <i class="bi bi-trash-fill"></i>
-                                        </button>
                                     </div>
                                 </td>
                             </tr>
                             <!-- /row -->
 
-                                                        <!-- row -->
-                                                        <tr>
-                                                            <td colspan="2">
-                                                                <div class="d-flex">
-                                                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
-                                                                    <div>
-                                                                        <span class="ps-2 d-block">Smartphone boolstrap edition 32</span>
-                                                                        <span class="ps-2 text-secondary d-none d-xl-block">è un bel telefono</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td class="align-middle d-none d-sm-table-cell text-end">
-                                                                <span>2000.00€</span>
-                                                            </td>
-                                                            <td class="align-middle d-none d-md-table-cell text-end">
-                                                                <button class="border border-success bg-light bg-opacity-10 rounded-circle">
-                                                                    <i class="bi bi-check"></i>
-                                                                </button>
-                                                            </td>
-                                                            <td class="align-middle text-end">
-                                                                <div class="d-flex gap-2 justify-content-end">
-                                                                    <button type="button" class="btn btn-outline-primary btn-sm">
-                                                                        <i class="bi bi-pencil-fill"></i>
-                                                                    </button>
-                                                                    <button type="button" class="btn btn-outline-danger btn-sm">
-                                                                        <i class="bi bi-trash-fill"></i>
-                                                                    </button>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <!-- /row -->
-
-                                                                                    <!-- row -->
+                            <!-- row -->
                             <tr>
-                                <td colspan="2">
-                                    <div class="d-flex">
-                                        <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
-                                        <div>
-                                            <span class="ps-2 d-block">Smartphone boolstrap edition 32</span>
-                                            <span class="ps-2 text-secondary d-none d-xl-block">è un bel telefono</span>
-                                        </div>
-                                    </div>
+                                <td class="col-md-1 col-lg-1 pt-2 pb-2">
+                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
                                 </td>
-                                <td class="align-middle d-none d-sm-table-cell text-end">
+                                <td class="col-12 col-sm-12 col-md-12 col-lg-12 text-start">
+                                    <span class="d-block">Smartphone boolstrap edition 32</span>
+                                    <span class="text-secondary d-none d-lg-block">è un bel telefono</span>
+                                </td>
+
+                                <td class="d-none d-sm-table-cell col-md-1 p-0 pt-2 text-center">
                                     <span>2000.00€</span>
                                 </td>
-                                <td class="align-middle d-none d-md-table-cell text-end">
+                                <td class="d-none d-md-table-cell col-md-1 p-0 pt-2 text-center">
                                     <button class="border border-success bg-light bg-opacity-10 rounded-circle">
                                         <i class="bi bi-check"></i>
                                     </button>
                                 </td>
-                                <td class="align-middle text-end">
+                                <td class="col-2 col-sm-2 col-md-1 p-0 pt-2 ps-2">
                                     <div class="d-flex gap-2 justify-content-end">
                                         <button type="button" class="btn btn-outline-primary btn-sm">
                                             <i class="bi bi-pencil-fill"></i>
                                         </button>
                                         <button type="button" class="btn btn-outline-danger btn-sm">
-                                            <i class="bi bi-trash-fill"></i>
+                                            <i class="bi bi-trash-fill" data-bs-toggle="modal"
+                                                data-bs-target="#elimina"></i>
                                         </button>
+                                    </div>
+                                    <div class="modal fade" id="elimina" tabindex="-1" aria-labelledby="elimina"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header text-center d-block border-bottom-0">
+                                                    <h1 class="modal-title h3 text-uppercase text-danger" id="elimina">
+                                                        Mario,sicuro di voler eliminare il prodotto?</h1>
+                                                </div>
+                                                <div
+                                                    class="modal-footer justify-content-center btn btn-group border-top-0 m-0">
+                                                    <button type="button" class="btn btn-outline-success m-0">Torna
+                                                        indietro</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger m-0">Cancella</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </td>
                             </tr>
                             <!-- /row -->
 
-                                                        <!-- row -->
-                                                        <tr>
-                                                            <td colspan="2">
-                                                                <div class="d-flex">
-                                                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
-                                                                    <div>
-                                                                        <span class="ps-2 d-block">Smartphone boolstrap edition 32</span>
-                                                                        <span class="ps-2 text-secondary d-none d-xl-block">è un bel telefono</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td class="align-middle d-none d-sm-table-cell text-end">
-                                                                <span>2000.00€</span>
-                                                            </td>
-                                                            <td class="align-middle d-none d-md-table-cell text-end">
-                                                                <button class="border border-success bg-light bg-opacity-10 rounded-circle">
-                                                                    <i class="bi bi-check"></i>
-                                                                </button>
-                                                            </td>
-                                                            <td class="align-middle text-end">
-                                                                <div class="d-flex gap-2 justify-content-end">
-                                                                    <button type="button" class="btn btn-outline-primary btn-sm">
-                                                                        <i class="bi bi-pencil-fill"></i>
-                                                                    </button>
-                                                                    <button type="button" class="btn btn-outline-danger btn-sm">
-                                                                        <i class="bi bi-trash-fill"></i>
-                                                                    </button>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <!-- /row -->
-
-                                                                                    <!-- row -->
+                            <!-- row -->
                             <tr>
-                                <td colspan="2">
-                                    <div class="d-flex">
-                                        <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
-                                        <div>
-                                            <span class="ps-2 d-block">Smartphone boolstrap edition 32</span>
-                                            <span class="ps-2 text-secondary d-none d-xl-block">è un bel telefono</span>
-                                        </div>
-                                    </div>
+                                <td class="col-md-1 col-lg-1 pt-2 pb-2">
+                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
                                 </td>
-                                <td class="align-middle d-none d-sm-table-cell text-end">
+                                <td class="col-12 col-sm-12 col-md-12 col-lg-12 text-start">
+                                    <span class="d-block">Smartphone boolstrap edition 32</span>
+                                    <span class="text-secondary d-none d-lg-block">è un bel telefono</span>
+                                </td>
+
+                                <td class="d-none d-sm-table-cell col-md-1 p-0 pt-2 text-center">
                                     <span>2000.00€</span>
                                 </td>
-                                <td class="align-middle d-none d-md-table-cell text-end">
+                                <td class="d-none d-md-table-cell col-md-1 p-0 pt-2 text-center">
                                     <button class="border border-success bg-light bg-opacity-10 rounded-circle">
                                         <i class="bi bi-check"></i>
                                     </button>
                                 </td>
-                                <td class="align-middle text-end">
+                                <td class="col-2 col-sm-2 col-md-1 p-0 pt-2 ps-2">
                                     <div class="d-flex gap-2 justify-content-end">
                                         <button type="button" class="btn btn-outline-primary btn-sm">
                                             <i class="bi bi-pencil-fill"></i>
                                         </button>
                                         <button type="button" class="btn btn-outline-danger btn-sm">
-                                            <i class="bi bi-trash-fill"></i>
+                                            <i class="bi bi-trash-fill" data-bs-toggle="modal"
+                                                data-bs-target="#elimina"></i>
                                         </button>
+                                    </div>
+                                    <div class="modal fade" id="elimina" tabindex="-1" aria-labelledby="elimina"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header text-center d-block border-bottom-0">
+                                                    <h1 class="modal-title h3 text-uppercase text-danger" id="elimina">
+                                                        Mario,sicuro di voler eliminare il prodotto?</h1>
+                                                </div>
+                                                <div
+                                                    class="modal-footer justify-content-center btn btn-group border-top-0 m-0">
+                                                    <button type="button" class="btn btn-outline-success m-0">Torna
+                                                        indietro</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger m-0">Cancella</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </td>
                             </tr>
                             <!-- /row -->
 
-                                                        <!-- row -->
-                                                        <tr>
-                                                            <td colspan="2">
-                                                                <div class="d-flex">
-                                                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
-                                                                    <div>
-                                                                        <span class="ps-2 d-block">Smartphone boolstrap edition 32</span>
-                                                                        <span class="ps-2 text-secondary d-none d-xl-block">è un bel telefono</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td class="align-middle d-none d-sm-table-cell text-end">
-                                                                <span>2000.00€</span>
-                                                            </td>
-                                                            <td class="align-middle d-none d-md-table-cell text-end">
-                                                                <button class="border border-success bg-light bg-opacity-10 rounded-circle">
-                                                                    <i class="bi bi-check"></i>
-                                                                </button>
-                                                            </td>
-                                                            <td class="align-middle text-end">
-                                                                <div class="d-flex gap-2 justify-content-end">
-                                                                    <button type="button" class="btn btn-outline-primary btn-sm">
-                                                                        <i class="bi bi-pencil-fill"></i>
-                                                                    </button>
-                                                                    <button type="button" class="btn btn-outline-danger btn-sm">
-                                                                        <i class="bi bi-trash-fill"></i>
-                                                                    </button>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <!-- /row -->
-
-                                                                                    <!-- row -->
+                            <!-- row -->
                             <tr>
-                                <td colspan="2">
-                                    <div class="d-flex">
-                                        <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
-                                        <div>
-                                            <span class="ps-2 d-block">Smartphone boolstrap edition 32</span>
-                                            <span class="ps-2 text-secondary d-none d-xl-block">è un bel telefono</span>
-                                        </div>
-                                    </div>
+                                <td class="col-md-1 col-lg-1 pt-2 pb-2">
+                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
                                 </td>
-                                <td class="align-middle d-none d-sm-table-cell text-end">
+                                <td class="col-12 col-sm-12 col-md-12 col-lg-12 text-start">
+                                    <span class="d-block">Smartphone boolstrap edition 32</span>
+                                    <span class="text-secondary d-none d-lg-block">è un bel telefono</span>
+                                </td>
+
+                                <td class="d-none d-sm-table-cell col-md-1 p-0 pt-2 text-center">
                                     <span>2000.00€</span>
                                 </td>
-                                <td class="align-middle d-none d-md-table-cell text-end">
+                                <td class="d-none d-md-table-cell col-md-1 p-0 pt-2 text-center">
                                     <button class="border border-success bg-light bg-opacity-10 rounded-circle">
                                         <i class="bi bi-check"></i>
                                     </button>
                                 </td>
-                                <td class="align-middle text-end">
+                                <td class="col-2 col-sm-2 col-md-1 p-0 pt-2 ps-2">
                                     <div class="d-flex gap-2 justify-content-end">
                                         <button type="button" class="btn btn-outline-primary btn-sm">
                                             <i class="bi bi-pencil-fill"></i>
                                         </button>
                                         <button type="button" class="btn btn-outline-danger btn-sm">
-                                            <i class="bi bi-trash-fill"></i>
+                                            <i class="bi bi-trash-fill" data-bs-toggle="modal"
+                                                data-bs-target="#elimina"></i>
                                         </button>
+                                    </div>
+                                    <div class="modal fade" id="elimina" tabindex="-1" aria-labelledby="elimina"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header text-center d-block border-bottom-0">
+                                                    <h1 class="modal-title h3 text-uppercase text-danger" id="elimina">
+                                                        Mario,sicuro di voler eliminare il prodotto?</h1>
+                                                </div>
+                                                <div
+                                                    class="modal-footer justify-content-center btn btn-group border-top-0 m-0">
+                                                    <button type="button" class="btn btn-outline-success m-0">Torna
+                                                        indietro</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger m-0">Cancella</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </td>
                             </tr>
                             <!-- /row -->
 
-                                                        <!-- row -->
-                                                        <tr>
-                                                            <td colspan="2">
-                                                                <div class="d-flex">
-                                                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
-                                                                    <div>
-                                                                        <span class="ps-2 d-block">Smartphone boolstrap edition 32</span>
-                                                                        <span class="ps-2 text-secondary d-none d-xl-block">è un bel telefono</span>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td class="align-middle d-none d-sm-table-cell text-end">
-                                                                <span>2000.00€</span>
-                                                            </td>
-                                                            <td class="align-middle d-none d-md-table-cell text-end">
-                                                                <button class="border border-success bg-light bg-opacity-10 rounded-circle">
-                                                                    <i class="bi bi-check"></i>
-                                                                </button>
-                                                            </td>
-                                                            <td class="align-middle text-end">
-                                                                <div class="d-flex gap-2 justify-content-end">
-                                                                    <button type="button" class="btn btn-outline-primary btn-sm">
-                                                                        <i class="bi bi-pencil-fill"></i>
-                                                                    </button>
-                                                                    <button type="button" class="btn btn-outline-danger btn-sm">
-                                                                        <i class="bi bi-trash-fill"></i>
-                                                                    </button>
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <!-- /row -->
-
-                                                                                    <!-- row -->
+                            <!-- row -->
                             <tr>
-                                <td colspan="2">
-                                    <div class="d-flex">
-                                        <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
-                                        <div>
-                                            <span class="ps-2 d-block">Smartphone boolstrap edition 32</span>
-                                            <span class="ps-2 text-secondary d-none d-xl-block">è un bel telefono</span>
-                                        </div>
-                                    </div>
+                                <td class="col-md-1 col-lg-1 pt-2 pb-2">
+                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
                                 </td>
-                                <td class="align-middle d-none d-sm-table-cell text-end">
+                                <td class="col-12 col-sm-12 col-md-12 col-lg-12 text-start">
+                                    <span class="d-block">Smartphone boolstrap edition 32</span>
+                                    <span class="text-secondary d-none d-lg-block">è un bel telefono</span>
+                                </td>
+
+                                <td class="d-none d-sm-table-cell col-md-1 p-0 pt-2 text-center">
                                     <span>2000.00€</span>
                                 </td>
-                                <td class="align-middle d-none d-md-table-cell text-end">
+                                <td class="d-none d-md-table-cell col-md-1 p-0 pt-2 text-center">
                                     <button class="border border-success bg-light bg-opacity-10 rounded-circle">
                                         <i class="bi bi-check"></i>
                                     </button>
                                 </td>
-                                <td class="align-middle text-end">
+                                <td class="col-2 col-sm-2 col-md-1 p-0 pt-2 ps-2">
                                     <div class="d-flex gap-2 justify-content-end">
                                         <button type="button" class="btn btn-outline-primary btn-sm">
                                             <i class="bi bi-pencil-fill"></i>
                                         </button>
                                         <button type="button" class="btn btn-outline-danger btn-sm">
-                                            <i class="bi bi-trash-fill"></i>
+                                            <i class="bi bi-trash-fill" data-bs-toggle="modal"
+                                                data-bs-target="#elimina"></i>
                                         </button>
+                                    </div>
+                                    <div class="modal fade" id="elimina" tabindex="-1" aria-labelledby="elimina"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header text-center d-block border-bottom-0">
+                                                    <h1 class="modal-title h3 text-uppercase text-danger" id="elimina">
+                                                        Mario,sicuro di voler eliminare il prodotto?</h1>
+                                                </div>
+                                                <div
+                                                    class="modal-footer justify-content-center btn btn-group border-top-0 m-0">
+                                                    <button type="button" class="btn btn-outline-success m-0">Torna
+                                                        indietro</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger m-0">Cancella</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </td>
                             </tr>
                             <!-- /row -->
+
+                            <!-- row -->
+                            <tr>
+                                <td class="col-md-1 col-lg-1 pt-2 pb-2">
+                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
+                                </td>
+                                <td class="col-12 col-sm-12 col-md-12 col-lg-12 text-start">
+                                    <span class="d-block">Smartphone boolstrap edition 32</span>
+                                    <span class="text-secondary d-none d-lg-block">è un bel telefono</span>
+                                </td>
+
+                                <td class="d-none d-sm-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <span>2000.00€</span>
+                                </td>
+                                <td class="d-none d-md-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <button class="border border-success bg-light bg-opacity-10 rounded-circle">
+                                        <i class="bi bi-check"></i>
+                                    </button>
+                                </td>
+                                <td class="col-2 col-sm-2 col-md-1 p-0 pt-2 ps-2">
+                                    <div class="d-flex gap-2 justify-content-end">
+                                        <button type="button" class="btn btn-outline-primary btn-sm">
+                                            <i class="bi bi-pencil-fill"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-danger btn-sm">
+                                            <i class="bi bi-trash-fill" data-bs-toggle="modal"
+                                                data-bs-target="#elimina"></i>
+                                        </button>
+                                    </div>
+                                    <div class="modal fade" id="elimina" tabindex="-1" aria-labelledby="elimina"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header text-center d-block border-bottom-0">
+                                                    <h1 class="modal-title h3 text-uppercase text-danger" id="elimina">
+                                                        Mario,sicuro di voler eliminare il prodotto?</h1>
+                                                </div>
+                                                <div
+                                                    class="modal-footer justify-content-center btn btn-group border-top-0 m-0">
+                                                    <button type="button" class="btn btn-outline-success m-0">Torna
+                                                        indietro</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger m-0">Cancella</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- /row -->
+
+                            <!-- row -->
+                            <tr>
+                                <td class="col-md-1 col-lg-1 pt-2 pb-2">
+                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
+                                </td>
+                                <td class="col-12 col-sm-12 col-md-12 col-lg-12 text-start">
+                                    <span class="d-block">Smartphone boolstrap edition 32</span>
+                                    <span class="text-secondary d-none d-lg-block">è un bel telefono</span>
+                                </td>
+
+                                <td class="d-none d-sm-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <span>2000.00€</span>
+                                </td>
+                                <td class="d-none d-md-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <button class="border border-success bg-light bg-opacity-10 rounded-circle">
+                                        <i class="bi bi-check"></i>
+                                    </button>
+                                </td>
+                                <td class="col-2 col-sm-2 col-md-1 p-0 pt-2 ps-2">
+                                    <div class="d-flex gap-2 justify-content-end">
+                                        <button type="button" class="btn btn-outline-primary btn-sm">
+                                            <i class="bi bi-pencil-fill"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-danger btn-sm">
+                                            <i class="bi bi-trash-fill" data-bs-toggle="modal"
+                                                data-bs-target="#elimina"></i>
+                                        </button>
+                                    </div>
+                                    <div class="modal fade" id="elimina" tabindex="-1" aria-labelledby="elimina"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header text-center d-block border-bottom-0">
+                                                    <h1 class="modal-title h3 text-uppercase text-danger" id="elimina">
+                                                        Mario,sicuro di voler eliminare il prodotto?</h1>
+                                                </div>
+                                                <div
+                                                    class="modal-footer justify-content-center btn btn-group border-top-0 m-0">
+                                                    <button type="button" class="btn btn-outline-success m-0">Torna
+                                                        indietro</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger m-0">Cancella</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- /row -->
+
+                            <!-- row -->
+                            <tr>
+                                <td class="col-md-1 col-lg-1 pt-2 pb-2">
+                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
+                                </td>
+                                <td class="col-12 col-sm-12 col-md-12 col-lg-12 text-start">
+                                    <span class="d-block">Smartphone boolstrap edition 32</span>
+                                    <span class="text-secondary d-none d-lg-block">è un bel telefono</span>
+                                </td>
+
+                                <td class="d-none d-sm-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <span>2000.00€</span>
+                                </td>
+                                <td class="d-none d-md-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <button class="border border-success bg-light bg-opacity-10 rounded-circle">
+                                        <i class="bi bi-check"></i>
+                                    </button>
+                                </td>
+                                <td class="col-2 col-sm-2 col-md-1 p-0 pt-2 ps-2">
+                                    <div class="d-flex gap-2 justify-content-end">
+                                        <button type="button" class="btn btn-outline-primary btn-sm">
+                                            <i class="bi bi-pencil-fill"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-danger btn-sm">
+                                            <i class="bi bi-trash-fill" data-bs-toggle="modal"
+                                                data-bs-target="#elimina"></i>
+                                        </button>
+                                    </div>
+                                    <div class="modal fade" id="elimina" tabindex="-1" aria-labelledby="elimina"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header text-center d-block border-bottom-0">
+                                                    <h1 class="modal-title h3 text-uppercase text-danger" id="elimina">
+                                                        Mario,sicuro di voler eliminare il prodotto?</h1>
+                                                </div>
+                                                <div
+                                                    class="modal-footer justify-content-center btn btn-group border-top-0 m-0">
+                                                    <button type="button" class="btn btn-outline-success m-0">Torna
+                                                        indietro</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger m-0">Cancella</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- /row -->
+
+                            <!-- row -->
+                            <tr>
+                                <td class="col-md-1 col-lg-1 pt-2 pb-2">
+                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
+                                </td>
+                                <td class="col-12 col-sm-12 col-md-12 col-lg-12 text-start">
+                                    <span class="d-block">Smartphone boolstrap edition 32</span>
+                                    <span class="text-secondary d-none d-lg-block">è un bel telefono</span>
+                                </td>
+
+                                <td class="d-none d-sm-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <span>2000.00€</span>
+                                </td>
+                                <td class="d-none d-md-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <button class="border border-success bg-light bg-opacity-10 rounded-circle">
+                                        <i class="bi bi-check"></i>
+                                    </button>
+                                </td>
+                                <td class="col-2 col-sm-2 col-md-1 p-0 pt-2 ps-2">
+                                    <div class="d-flex gap-2 justify-content-end">
+                                        <button type="button" class="btn btn-outline-primary btn-sm">
+                                            <i class="bi bi-pencil-fill"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-danger btn-sm">
+                                            <i class="bi bi-trash-fill" data-bs-toggle="modal"
+                                                data-bs-target="#elimina"></i>
+                                        </button>
+                                    </div>
+                                    <div class="modal fade" id="elimina" tabindex="-1" aria-labelledby="elimina"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header text-center d-block border-bottom-0">
+                                                    <h1 class="modal-title h3 text-uppercase text-danger" id="elimina">
+                                                        Mario,sicuro di voler eliminare il prodotto?</h1>
+                                                </div>
+                                                <div
+                                                    class="modal-footer justify-content-center btn btn-group border-top-0 m-0">
+                                                    <button type="button" class="btn btn-outline-success m-0">Torna
+                                                        indietro</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger m-0">Cancella</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- /row -->
+
+                            <!-- row -->
+                            <tr>
+                                <td class="col-md-1 col-lg-1 pt-2 pb-2">
+                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
+                                </td>
+                                <td class="col-12 col-sm-12 col-md-12 col-lg-12 text-start">
+                                    <span class="d-block">Smartphone boolstrap edition 32</span>
+                                    <span class="text-secondary d-none d-lg-block">è un bel telefono</span>
+                                </td>
+
+                                <td class="d-none d-sm-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <span>2000.00€</span>
+                                </td>
+                                <td class="d-none d-md-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <button class="border border-success bg-light bg-opacity-10 rounded-circle">
+                                        <i class="bi bi-check"></i>
+                                    </button>
+                                </td>
+                                <td class="col-2 col-sm-2 col-md-1 p-0 pt-2 ps-2">
+                                    <div class="d-flex gap-2 justify-content-end">
+                                        <button type="button" class="btn btn-outline-primary btn-sm">
+                                            <i class="bi bi-pencil-fill"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-danger btn-sm">
+                                            <i class="bi bi-trash-fill" data-bs-toggle="modal"
+                                                data-bs-target="#elimina"></i>
+                                        </button>
+                                    </div>
+                                    <div class="modal fade" id="elimina" tabindex="-1" aria-labelledby="elimina"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header text-center d-block border-bottom-0">
+                                                    <h1 class="modal-title h3 text-uppercase text-danger" id="elimina">
+                                                        Mario,sicuro di voler eliminare il prodotto?</h1>
+                                                </div>
+                                                <div
+                                                    class="modal-footer justify-content-center btn btn-group border-top-0 m-0">
+                                                    <button type="button" class="btn btn-outline-success m-0">Torna
+                                                        indietro</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger m-0">Cancella</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- /row -->
+
+                            <!-- row -->
+                            <tr>
+                                <td class="col-md-1 col-lg-1 pt-2 pb-2">
+                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
+                                </td>
+                                <td class="col-12 col-sm-12 col-md-12 col-lg-12 text-start">
+                                    <span class="d-block">Smartphone boolstrap edition 32</span>
+                                    <span class="text-secondary d-none d-lg-block">è un bel telefono</span>
+                                </td>
+
+                                <td class="d-none d-sm-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <span>2000.00€</span>
+                                </td>
+                                <td class="d-none d-md-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <button class="border border-success bg-light bg-opacity-10 rounded-circle">
+                                        <i class="bi bi-check"></i>
+                                    </button>
+                                </td>
+                                <td class="col-2 col-sm-2 col-md-1 p-0 pt-2 ps-2">
+                                    <div class="d-flex gap-2 justify-content-end">
+                                        <button type="button" class="btn btn-outline-primary btn-sm">
+                                            <i class="bi bi-pencil-fill"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-danger btn-sm">
+                                            <i class="bi bi-trash-fill" data-bs-toggle="modal"
+                                                data-bs-target="#elimina"></i>
+                                        </button>
+                                    </div>
+                                    <div class="modal fade" id="elimina" tabindex="-1" aria-labelledby="elimina"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header text-center d-block border-bottom-0">
+                                                    <h1 class="modal-title h3 text-uppercase text-danger" id="elimina">
+                                                        Mario,sicuro di voler eliminare il prodotto?</h1>
+                                                </div>
+                                                <div
+                                                    class="modal-footer justify-content-center btn btn-group border-top-0 m-0">
+                                                    <button type="button" class="btn btn-outline-success m-0">Torna
+                                                        indietro</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger m-0">Cancella</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- /row -->
+
+                            <!-- row -->
+                            <tr>
+                                <td class="col-md-1 col-lg-1 pt-2 pb-2">
+                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
+                                </td>
+                                <td class="col-12 col-sm-12 col-md-12 col-lg-12 text-start">
+                                    <span class="d-block">Smartphone boolstrap edition 32</span>
+                                    <span class="text-secondary d-none d-lg-block">è un bel telefono</span>
+                                </td>
+
+                                <td class="d-none d-sm-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <span>2000.00€</span>
+                                </td>
+                                <td class="d-none d-md-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <button class="border border-success bg-light bg-opacity-10 rounded-circle">
+                                        <i class="bi bi-check"></i>
+                                    </button>
+                                </td>
+                                <td class="col-2 col-sm-2 col-md-1 p-0 pt-2 ps-2">
+                                    <div class="d-flex gap-2 justify-content-end">
+                                        <button type="button" class="btn btn-outline-primary btn-sm">
+                                            <i class="bi bi-pencil-fill"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-danger btn-sm">
+                                            <i class="bi bi-trash-fill" data-bs-toggle="modal"
+                                                data-bs-target="#elimina"></i>
+                                        </button>
+                                    </div>
+                                    <div class="modal fade" id="elimina" tabindex="-1" aria-labelledby="elimina"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header text-center d-block border-bottom-0">
+                                                    <h1 class="modal-title h3 text-uppercase text-danger" id="elimina">
+                                                        Mario,sicuro di voler eliminare il prodotto?</h1>
+                                                </div>
+                                                <div
+                                                    class="modal-footer justify-content-center btn btn-group border-top-0 m-0">
+                                                    <button type="button" class="btn btn-outline-success m-0">Torna
+                                                        indietro</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger m-0">Cancella</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- /row -->
+
+                            <!-- row -->
+                            <tr>
+                                <td class="col-md-1 col-lg-1 pt-2 pb-2">
+                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
+                                </td>
+                                <td class="col-12 col-sm-12 col-md-12 col-lg-12 text-start">
+                                    <span class="d-block">Smartphone boolstrap edition 32</span>
+                                    <span class="text-secondary d-none d-lg-block">è un bel telefono</span>
+                                </td>
+
+                                <td class="d-none d-sm-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <span>2000.00€</span>
+                                </td>
+                                <td class="d-none d-md-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <button class="border border-success bg-light bg-opacity-10 rounded-circle">
+                                        <i class="bi bi-check"></i>
+                                    </button>
+                                </td>
+                                <td class="col-2 col-sm-2 col-md-1 p-0 pt-2 ps-2">
+                                    <div class="d-flex gap-2 justify-content-end">
+                                        <button type="button" class="btn btn-outline-primary btn-sm">
+                                            <i class="bi bi-pencil-fill"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-danger btn-sm">
+                                            <i class="bi bi-trash-fill" data-bs-toggle="modal"
+                                                data-bs-target="#elimina"></i>
+                                        </button>
+                                    </div>
+                                    <div class="modal fade" id="elimina" tabindex="-1" aria-labelledby="elimina"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header text-center d-block border-bottom-0">
+                                                    <h1 class="modal-title h3 text-uppercase text-danger" id="elimina">
+                                                        Mario,sicuro di voler eliminare il prodotto?</h1>
+                                                </div>
+                                                <div
+                                                    class="modal-footer justify-content-center btn btn-group border-top-0 m-0">
+                                                    <button type="button" class="btn btn-outline-success m-0">Torna
+                                                        indietro</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger m-0">Cancella</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- /row -->
+
+                            <!-- row -->
+                            <tr>
+                                <td class="col-md-1 col-lg-1 pt-2 pb-2">
+                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
+                                </td>
+                                <td class="col-12 col-sm-12 col-md-12 col-lg-12 text-start">
+                                    <span class="d-block">Smartphone boolstrap edition 32</span>
+                                    <span class="text-secondary d-none d-lg-block">è un bel telefono</span>
+                                </td>
+
+                                <td class="d-none d-sm-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <span>2000.00€</span>
+                                </td>
+                                <td class="d-none d-md-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <button class="border border-success bg-light bg-opacity-10 rounded-circle">
+                                        <i class="bi bi-check"></i>
+                                    </button>
+                                </td>
+                                <td class="col-2 col-sm-2 col-md-1 p-0 pt-2 ps-2">
+                                    <div class="d-flex gap-2 justify-content-end">
+                                        <button type="button" class="btn btn-outline-primary btn-sm">
+                                            <i class="bi bi-pencil-fill"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-danger btn-sm">
+                                            <i class="bi bi-trash-fill" data-bs-toggle="modal"
+                                                data-bs-target="#elimina"></i>
+                                        </button>
+                                    </div>
+                                    <div class="modal fade" id="elimina" tabindex="-1" aria-labelledby="elimina"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header text-center d-block border-bottom-0">
+                                                    <h1 class="modal-title h3 text-uppercase text-danger" id="elimina">
+                                                        Mario,sicuro di voler eliminare il prodotto?</h1>
+                                                </div>
+                                                <div
+                                                    class="modal-footer justify-content-center btn btn-group border-top-0 m-0">
+                                                    <button type="button" class="btn btn-outline-success m-0">Torna
+                                                        indietro</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger m-0">Cancella</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- /row -->
+
+                            <!-- row -->
+                            <tr>
+                                <td class="col-md-1 col-lg-1 pt-2 pb-2">
+                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
+                                </td>
+                                <td class="col-12 col-sm-12 col-md-12 col-lg-12 text-start">
+                                    <span class="d-block">Smartphone boolstrap edition 32</span>
+                                    <span class="text-secondary d-none d-lg-block">è un bel telefono</span>
+                                </td>
+
+                                <td class="d-none d-sm-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <span>2000.00€</span>
+                                </td>
+                                <td class="d-none d-md-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <button class="border border-success bg-light bg-opacity-10 rounded-circle">
+                                        <i class="bi bi-check"></i>
+                                    </button>
+                                </td>
+                                <td class="col-2 col-sm-2 col-md-1 p-0 pt-2 ps-2">
+                                    <div class="d-flex gap-2 justify-content-end">
+                                        <button type="button" class="btn btn-outline-primary btn-sm">
+                                            <i class="bi bi-pencil-fill"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-danger btn-sm">
+                                            <i class="bi bi-trash-fill" data-bs-toggle="modal"
+                                                data-bs-target="#elimina"></i>
+                                        </button>
+                                    </div>
+                                    <div class="modal fade" id="elimina" tabindex="-1" aria-labelledby="elimina"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header text-center d-block border-bottom-0">
+                                                    <h1 class="modal-title h3 text-uppercase text-danger" id="elimina">
+                                                        Mario,sicuro di voler eliminare il prodotto?</h1>
+                                                </div>
+                                                <div
+                                                    class="modal-footer justify-content-center btn btn-group border-top-0 m-0">
+                                                    <button type="button" class="btn btn-outline-success m-0">Torna
+                                                        indietro</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger m-0">Cancella</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- /row -->
+
+                            <!-- row -->
+                            <tr>
+                                <td class="col-md-1 col-lg-1 pt-2 pb-2">
+                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
+                                </td>
+                                <td class="col-12 col-sm-12 col-md-12 col-lg-12 text-start">
+                                    <span class="d-block">Smartphone boolstrap edition 32</span>
+                                    <span class="text-secondary d-none d-lg-block">è un bel telefono</span>
+                                </td>
+
+                                <td class="d-none d-sm-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <span>2000.00€</span>
+                                </td>
+                                <td class="d-none d-md-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <button class="border border-success bg-light bg-opacity-10 rounded-circle">
+                                        <i class="bi bi-check"></i>
+                                    </button>
+                                </td>
+                                <td class="col-2 col-sm-2 col-md-1 p-0 pt-2 ps-2">
+                                    <div class="d-flex gap-2 justify-content-end">
+                                        <button type="button" class="btn btn-outline-primary btn-sm">
+                                            <i class="bi bi-pencil-fill"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-danger btn-sm">
+                                            <i class="bi bi-trash-fill" data-bs-toggle="modal"
+                                                data-bs-target="#elimina"></i>
+                                        </button>
+                                    </div>
+                                    <div class="modal fade" id="elimina" tabindex="-1" aria-labelledby="elimina"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header text-center d-block border-bottom-0">
+                                                    <h1 class="modal-title h3 text-uppercase text-danger" id="elimina">
+                                                        Mario,sicuro di voler eliminare il prodotto?</h1>
+                                                </div>
+                                                <div
+                                                    class="modal-footer justify-content-center btn btn-group border-top-0 m-0">
+                                                    <button type="button" class="btn btn-outline-success m-0">Torna
+                                                        indietro</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger m-0">Cancella</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- /row -->
+
+                            <!-- row -->
+                            <tr>
+                                <td class="col-md-1 col-lg-1 pt-2 pb-2">
+                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
+                                </td>
+                                <td class="col-12 col-sm-12 col-md-12 col-lg-12 text-start">
+                                    <span class="d-block">Smartphone boolstrap edition 32</span>
+                                    <span class="text-secondary d-none d-lg-block">è un bel telefono</span>
+                                </td>
+
+                                <td class="d-none d-sm-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <span>2000.00€</span>
+                                </td>
+                                <td class="d-none d-md-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <button class="border border-success bg-light bg-opacity-10 rounded-circle">
+                                        <i class="bi bi-check"></i>
+                                    </button>
+                                </td>
+                                <td class="col-2 col-sm-2 col-md-1 p-0 pt-2 ps-2">
+                                    <div class="d-flex gap-2 justify-content-end">
+                                        <button type="button" class="btn btn-outline-primary btn-sm">
+                                            <i class="bi bi-pencil-fill"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-danger btn-sm">
+                                            <i class="bi bi-trash-fill" data-bs-toggle="modal"
+                                                data-bs-target="#elimina"></i>
+                                        </button>
+                                    </div>
+                                    <div class="modal fade" id="elimina" tabindex="-1" aria-labelledby="elimina"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header text-center d-block border-bottom-0">
+                                                    <h1 class="modal-title h3 text-uppercase text-danger" id="elimina">
+                                                        Mario,sicuro di voler eliminare il prodotto?</h1>
+                                                </div>
+                                                <div
+                                                    class="modal-footer justify-content-center btn btn-group border-top-0 m-0">
+                                                    <button type="button" class="btn btn-outline-success m-0">Torna
+                                                        indietro</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger m-0">Cancella</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- /row -->
+
+                            <!-- row -->
+                            <tr>
+                                <td class="col-md-1 col-lg-1 pt-2 pb-2">
+                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
+                                </td>
+                                <td class="col-12 col-sm-12 col-md-12 col-lg-12 text-start">
+                                    <span class="d-block">Smartphone boolstrap edition 32</span>
+                                    <span class="text-secondary d-none d-lg-block">è un bel telefono</span>
+                                </td>
+
+                                <td class="d-none d-sm-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <span>2000.00€</span>
+                                </td>
+                                <td class="d-none d-md-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <button class="border border-success bg-light bg-opacity-10 rounded-circle">
+                                        <i class="bi bi-check"></i>
+                                    </button>
+                                </td>
+                                <td class="col-2 col-sm-2 col-md-1 p-0 pt-2 ps-2">
+                                    <div class="d-flex gap-2 justify-content-end">
+                                        <button type="button" class="btn btn-outline-primary btn-sm">
+                                            <i class="bi bi-pencil-fill"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-danger btn-sm">
+                                            <i class="bi bi-trash-fill" data-bs-toggle="modal"
+                                                data-bs-target="#elimina"></i>
+                                        </button>
+                                    </div>
+                                    <div class="modal fade" id="elimina" tabindex="-1" aria-labelledby="elimina"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header text-center d-block border-bottom-0">
+                                                    <h1 class="modal-title h3 text-uppercase text-danger" id="elimina">
+                                                        Mario,sicuro di voler eliminare il prodotto?</h1>
+                                                </div>
+                                                <div
+                                                    class="modal-footer justify-content-center btn btn-group border-top-0 m-0">
+                                                    <button type="button" class="btn btn-outline-success m-0">Torna
+                                                        indietro</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger m-0">Cancella</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- /row -->
+
+                            <!-- row -->
+                            <tr>
+                                <td class="col-md-1 col-lg-1 pt-2 pb-2">
+                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
+                                </td>
+                                <td class="col-12 col-sm-12 col-md-12 col-lg-12 text-start">
+                                    <span class="d-block">Smartphone boolstrap edition 32</span>
+                                    <span class="text-secondary d-none d-lg-block">è un bel telefono</span>
+                                </td>
+
+                                <td class="d-none d-sm-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <span>2000.00€</span>
+                                </td>
+                                <td class="d-none d-md-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <button class="border border-success bg-light bg-opacity-10 rounded-circle">
+                                        <i class="bi bi-check"></i>
+                                    </button>
+                                </td>
+                                <td class="col-2 col-sm-2 col-md-1 p-0 pt-2 ps-2">
+                                    <div class="d-flex gap-2 justify-content-end">
+                                        <button type="button" class="btn btn-outline-primary btn-sm">
+                                            <i class="bi bi-pencil-fill"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-danger btn-sm">
+                                            <i class="bi bi-trash-fill" data-bs-toggle="modal"
+                                                data-bs-target="#elimina"></i>
+                                        </button>
+                                    </div>
+                                    <div class="modal fade" id="elimina" tabindex="-1" aria-labelledby="elimina"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header text-center d-block border-bottom-0">
+                                                    <h1 class="modal-title h3 text-uppercase text-danger" id="elimina">
+                                                        Mario,sicuro di voler eliminare il prodotto?</h1>
+                                                </div>
+                                                <div
+                                                    class="modal-footer justify-content-center btn btn-group border-top-0 m-0">
+                                                    <button type="button" class="btn btn-outline-success m-0">Torna
+                                                        indietro</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger m-0">Cancella</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- /row -->
+
+                            <!-- row -->
+                            <tr>
+                                <td class="col-md-1 col-lg-1 pt-2 pb-2">
+                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
+                                </td>
+                                <td class="col-12 col-sm-12 col-md-12 col-lg-12 text-start">
+                                    <span class="d-block">Smartphone boolstrap edition 32</span>
+                                    <span class="text-secondary d-none d-lg-block">è un bel telefono</span>
+                                </td>
+
+                                <td class="d-none d-sm-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <span>2000.00€</span>
+                                </td>
+                                <td class="d-none d-md-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <button class="border border-success bg-light bg-opacity-10 rounded-circle">
+                                        <i class="bi bi-check"></i>
+                                    </button>
+                                </td>
+                                <td class="col-2 col-sm-2 col-md-1 p-0 pt-2 ps-2">
+                                    <div class="d-flex gap-2 justify-content-end">
+                                        <button type="button" class="btn btn-outline-primary btn-sm">
+                                            <i class="bi bi-pencil-fill"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-danger btn-sm">
+                                            <i class="bi bi-trash-fill" data-bs-toggle="modal"
+                                                data-bs-target="#elimina"></i>
+                                        </button>
+                                    </div>
+                                    <div class="modal fade" id="elimina" tabindex="-1" aria-labelledby="elimina"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header text-center d-block border-bottom-0">
+                                                    <h1 class="modal-title h3 text-uppercase text-danger" id="elimina">
+                                                        Mario,sicuro di voler eliminare il prodotto?</h1>
+                                                </div>
+                                                <div
+                                                    class="modal-footer justify-content-center btn btn-group border-top-0 m-0">
+                                                    <button type="button" class="btn btn-outline-success m-0">Torna
+                                                        indietro</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger m-0">Cancella</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- /row -->
+
+                            <!-- row -->
+                            <tr>
+                                <td class="col-md-1 col-lg-1 pt-2 pb-2">
+                                    <img src="https://picsum.photos/50" class="object-fit-contain" alt="">
+                                </td>
+                                <td class="col-12 col-sm-12 col-md-12 col-lg-12 text-start">
+                                    <span class="d-block">Smartphone boolstrap edition 32</span>
+                                    <span class="text-secondary d-none d-lg-block">è un bel telefono</span>
+                                </td>
+
+                                <td class="d-none d-sm-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <span>2000.00€</span>
+                                </td>
+                                <td class="d-none d-md-table-cell col-md-1 p-0 pt-2 text-center">
+                                    <button class="border border-success bg-light bg-opacity-10 rounded-circle">
+                                        <i class="bi bi-check"></i>
+                                    </button>
+                                </td>
+                                <td class="col-2 col-sm-2 col-md-1 p-0 pt-2 ps-2">
+                                    <div class="d-flex gap-2 justify-content-end">
+                                        <button type="button" class="btn btn-outline-primary btn-sm">
+                                            <i class="bi bi-pencil-fill"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-danger btn-sm">
+                                            <i class="bi bi-trash-fill" data-bs-toggle="modal"
+                                                data-bs-target="#elimina"></i>
+                                        </button>
+                                    </div>
+                                    <div class="modal fade" id="elimina" tabindex="-1" aria-labelledby="elimina"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header text-center d-block border-bottom-0">
+                                                    <h1 class="modal-title h3 text-uppercase text-danger" id="elimina">
+                                                        Mario,sicuro di voler eliminare il prodotto?</h1>
+                                                </div>
+                                                <div
+                                                    class="modal-footer justify-content-center btn btn-group border-top-0 m-0">
+                                                    <button type="button" class="btn btn-outline-success m-0">Torna
+                                                        indietro</button>
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger m-0">Cancella</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- /row -->
+
                             <!-- /table -->
                 </div>
-
+                <!-- /table -->
             </main>
             <!-- /main -->
         </div>
