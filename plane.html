@@ -42,7 +42,7 @@
 
     <div class="container-fluid vh-100 d-md-flex vh-100">
         <div class="row flex-grow-1">
-            
+
             <!-- sidebar -->
             <div class="sidebar pb-3 col-md-4 col-lg-3 collapse d-md-block bg-dark" id="navbarSupportedContent">
                 <a href="/"
@@ -114,9 +114,25 @@
                             funzionalità esclusive e performance migliori.</p>
                         <h3><strong>Porta la tua esperienza al livello successivo!</strong></h3>
                         <button type="button" class="btn btn-primary rounded-5 px-4 py-2 me-2"
-                            value="Scopri di più">Scopri di piu</button>
-                        <button type="button" class="btn btn-outline-secondary rounded-5 px-4 py-2">Contattaci</button>
+                            value="Scopri di più">
+                            <span data-bs-target="#contattaci" data-bs-toggle="modal">Scopri di piu</span>
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary rounded-5 px-4 py-2" ><span data-bs-target="#contattaci" data-bs-toggle="modal">Contattaci</span></button>
                     </div>
+                    <div class="modal fade" id="contattaci" tabindex="-1" aria-labelledby="contattaci"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header text-center d-block border-bottom-0">
+                                <h2 class="modal-title h3 text-uppercase text-success" id="contattaci">
+                                    chiama numero verde 800.900.900.2</h2>
+                                    <span>per maggiori informazioni visita il sito www.pippoinfo.it</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                
                 </header>
                 <!-- /header -->
 
