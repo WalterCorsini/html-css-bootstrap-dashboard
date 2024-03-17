@@ -116,7 +116,7 @@
           <div class="col-12 col-lg-8 me-3">
             <div class="mb-3 d-md-flex ">
               <label for="name" class="form-label pt-1 me-5">Nome</label>
-              <input type="text" class="form-control " id="name" placeholder="Es. Pippo Pippo">
+              <input type="text" class="form-control" minlength="3" maxlength="15" id="name" placeholder="Es. Pippo Pippo" required>
             </div>
           <!-- /name product -->
 
@@ -124,7 +124,7 @@
             <!-- price -->
             <div class="mb-3 d-md-flex">
               <label for="prezzo" class="form-label pt-1 me-5">Prezzo</label>
-              <input type="text" class="form-control" id="prezzo" placeholder="Es. 100,00">
+              <input type="number" class="form-control" id="prezzo" placeholder="Es. 100,00">
             </div>
             <!-- /price -->
 
@@ -161,17 +161,17 @@
             <!-- status -->
             <div class="btn-group mb-3 border" role="group">
 
-              <input type="radio" class="btn-check d-inline" name="status" id="disponibile" autocomplete="off">
-              <label class="btn flex-grow-1" for="disponibile">Disponibile</label>
+              <input type="radio" class="btn-check" name="status" id="disponibile" autocomplete="off">
+              <label class="btn btn-outline-secondary flex-grow-1" for="disponibile">Disponibile</label>
 
-              <input type="radio" class="btn-check col" name="status" id="esaurito" autocomplete="off">
-              <label class="btn flex-grow-1" for="esaurito">Esaurito</label>
+              <input type="radio" class="btn-check" name="status" id="esaurito" autocomplete="off">
+              <label class="btn btn-outline-secondary flex-grow-1" for="esaurito">Esaurito</label>
 
-              <input type="radio" class="btn-check col" name="status" id="fuoriproduzione" autocomplete="off">
-              <label class="btn flex-grow-1" for="fuoriproduzione">Fuori produzione</label>
+              <input type="radio" class="btn-check" name="status" id="fuoriproduzione" autocomplete="off">
+              <label class="btn btn-outline-secondary flex-grow-1" for="fuoriproduzione">Fuori produzione</label>
 
-              <input type="radio" class="btn-check col" name="status" id="inarrivo" autocomplete="off">
-              <label class="btn flex-grow-1" for="inarrivo">In arrivo</label>
+              <input type="radio" class="btn-check" name="status" id="inarrivo" autocomplete="off">
+              <label class="btn btn-outline-secondary flex-grow-1" for="inarrivo">In arrivo</label>
             </div>
             <!-- /status -->
 
@@ -229,7 +229,7 @@
 
         </div>
         <!--/right col -->
-        <input type="submit" class="btn btn-primary" value="Salva">
+        <a type="submit" href="newproduct.html" class="btn btn-primary" value="Salva">Salva</a>
 
       </main>
       <!-- /main -->
