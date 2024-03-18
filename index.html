@@ -21,7 +21,7 @@
     <header>
 
         <!-- navbar -->
-        <nav class="navbar navbar-expand-md d-md-none bg-dark" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-md d-md-none bg-dark fixed-top" data-bs-theme="dark">
             <div class="container-fluid">
                 <!-- logo -->
                 <a class="navbar-brand" href="#">Bootstrap Dashboard</a>
@@ -42,7 +42,7 @@
 
     <div class="container-fluid vh-100 d-md-flex">
         <div class="row flex-grow-1">
-            
+
             <!-- sidebar -->
             <div class="sidebar pb-3 col-md-4 col-lg-3 collapse d-md-block bg-dark" id="navbarSupportedContent">
                 <a href="/"
@@ -83,14 +83,14 @@
                     </li>
                 </ul>
                 <hr />
-                <div class="dropdown ">
-                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                <div class="dropdown">
+                    <a href="#" class="d-none d-md-flex align-items-center text-white text-decoration-none dropdown-toggle"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="https://github.com/mdo.png" alt="mario rossi photo" width="32" height="32"
                             class="rounded-circle me-2" />
                         <strong>Mario Rossi</strong>
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-dark border border-secondary-subtle">
+                    <ul class="dropdown-menu d-md-flex-row dropdown-menu-dark border border-secondary-subtle" id="navbarSupportedContent">
                         <li><a class="dropdown-item" href="">impostazioni</a></li>
                         <li class="border-bottom border-secondary-subtle">
                             <a class="dropdown-item" href="">profilo</a>
@@ -103,8 +103,49 @@
             <!-- /sidebar -->
 
             <!-- main -->
-            <main class="col-md-8 col-lg-9 text-center">
-                <h1 class="text-uppercase">index</h1>
+            <main class="col-md-6 col-lg-6 m-auto text-center">
+                <!-- header -->
+                <h1 class="pt-5 mt-5">Benvenuto in Bootstrap</h1>
+                <img src="./img/bootstrap-logo.png" alt="">
+                <h2 class="p-5">offre molti vantaggi sotto tanti punti di vista</h2>
+                <!-- /header -->
+
+                <!-- button plane -->
+                <a href="plane.html" type="button" class="btn btn-outline-primary rounded-5 px-4 py-2 me-2"
+                    value="Scopri di più">
+                    <span>Scopri di piu</span>
+                </a>
+                <!-- /button plane-->
+
+                <!-- button product -->
+                <a href="products.html" type="button" class="btn btn-outline-success rounded-5 px-4 py-2 me-2"
+                    value="Scopri di più">
+                    <span>Visita lo Store</span>
+                </a>
+                <!-- /button product -->
+
+                <!-- button contattaci -->
+                <a href="products.html" data-bs-target="#contattaci" data-bs-toggle="modal" type="button" class="btn btn-outline-secondary rounded-5 px-4 py-2 me-2"
+                    value="Scopri di più">
+                    <span>Contattaci</span>
+                </a>
+                <!-- /button contattaci -->
+
+                <!-- modal -->
+                <div class="modal fade" id="contattaci" tabindex="-1" aria-labelledby="contattaci" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header text-center d-block border-bottom-0">
+                                <h2 class="modal-title h3 text-uppercase text-success" id="contattaci">
+                                    chiama numero verde 800.900.900.2</h2>
+                                <span>per maggiori informazioni visita il sito www.pippoinfo.it</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /modal -->
+
+                
             </main>
             <!-- /main -->
         </div>
